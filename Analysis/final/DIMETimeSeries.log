@@ -1,0 +1,334 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/mishat/Desktop/Data/JP/final/DIMETimeSeries.log
+  log type:  text
+ opened on:   3 May 2020, 14:16:32
+
+. //few nonlinear transformations have been tried (square and log terms)
+. //nIndv and aIndv robust to logarithmic transformations
+. //with aIndv, nCorp, count, nIndvTech robust to transformations
+. //with nIndv,
+. import delimited "/Users/mishat/Desktop/Data/JP/final/dimeTS.csv", case(preserve) numericcols(28 32) 
+(33 vars, 21,269 obs)
+
+. drop v1 nGen aGen sdCFCont sdCFDiff
+
+. 
+. desc
+
+Contains data
+  obs:        21,269                          
+ vars:            28                          
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NAMELSAD        str37   %37s                  
+yr              int     %8.0g                 
+area            float   %9.0g                 
+count           long    %12.0g                
+nIndv           long    %8.0g                 
+nCorp           int     %8.0g                 
+nIndvTech       long    %8.0g                 
+nIndvBigTech    int     %8.0g                 
+nCorpBigTech    int     %8.0g                 
+nDemRec         long    %8.0g                 
+nRepRec         long    %8.0g                 
+nIndRec         int     %8.0g                 
+nComRec         long    %8.0g                 
+aTot            float   %9.0g                 
+aIndv           float   %9.0g                 
+aCorp           float   %9.0g                 
+aIndvBigTech    double  %12.0g                
+aIndvTech       float   %9.0g                 
+aCorpTech       double  %8.0g                 
+aDemRec         float   %9.0g                 
+aRepRec         float   %9.0g                 
+aIndRec         double  %12.0g                
+aComRec         float   %9.0g                 
+meanCFCont      float   %9.0g                 
+meanCFCand      float   %9.0g                 
+sdCFCand        float   %9.0g                 
+meanCFDiff      float   %9.0g                 
+id              int     %8.0g                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sorted by: 
+     Note: Dataset has changed since last saved.
+
+. sum
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+    NAMELSAD |          0
+          yr |     21,269    2002.254    10.76764       1980       2018
+        area |     21,269    11.42607    23.56398       .044     468.67
+       count |     21,269    1332.179    12267.28          1     827884
+       nIndv |     21,269     1224.78    11685.65          0     816704
+-------------+---------------------------------------------------------
+       nCorp |     21,269     42.4357    435.5801          0      16809
+   nIndvTech |     21,269    150.3424    1470.666          0      90506
+nIndvBigTech |     21,269    14.60097    194.2492          0      11875
+nCorpBigTech |     21,269    2.392496    46.95092          0       5636
+     nDemRec |     21,269    591.5566    6613.792          0     584847
+-------------+---------------------------------------------------------
+     nRepRec |     21,269    126.1985    745.0427          0      35343
+     nIndRec |     21,269    11.57986     200.421          0      19914
+     nComRec |     21,269    843.8967    7908.755          0     570116
+        aTot |     21,269    814328.7    1.16e+07  -72576.08   7.56e+08
+       aIndv |     21,269    363458.2     4948452  -24940.85   2.95e+08
+-------------+---------------------------------------------------------
+       aCorp |     21,269    141656.5     3011811   -1464.06   3.03e+08
+aIndvBigTech |     21,269     3816.03    71307.52   -6361.72    6881128
+   aIndvTech |     21,269    48129.05     1757555  -100062.7   2.46e+08
+   aCorpTech |     21,269     1700.29    32889.13      -2500    2465865
+     aDemRec |     21,269      228371     3169192  -669127.7   1.43e+08
+-------------+---------------------------------------------------------
+     aRepRec |     21,269      145386     2420804  -110897.7   2.92e+08
+     aIndRec |     21,269    29530.88     1229963      -1400   1.32e+08
+     aComRec |     21,269    546885.4     8757939     -19394   6.27e+08
+  meanCFCont |     21,269    -.112016    .7410495  -3.548571       4.17
+  meanCFCand |     21,269   -.0200237    .6127338      -1.96       3.92
+-------------+---------------------------------------------------------
+    sdCFCand |     21,269   -.0200237    .6127338      -1.96       3.92
+  meanCFDiff |     21,269   -.0251369    .1715547       -2.7       3.05
+          id |     21,269    602.8063    381.2216          1       1475
+
+. outreg2 using sum1.doc, replace sum(log)
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          yr |     21,269    2002.254    10.76764       1980       2018
+        area |     21,269    11.42607    23.56398       .044     468.67
+       count |     21,269    1332.179    12267.28          1     827884
+       nIndv |     21,269     1224.78    11685.65          0     816704
+       nCorp |     21,269     42.4357    435.5801          0      16809
+-------------+---------------------------------------------------------
+   nIndvTech |     21,269    150.3424    1470.666          0      90506
+nIndvBigTech |     21,269    14.60097    194.2492          0      11875
+nCorpBigTech |     21,269    2.392496    46.95092          0       5636
+     nDemRec |     21,269    591.5566    6613.792          0     584847
+     nRepRec |     21,269    126.1985    745.0427          0      35343
+-------------+---------------------------------------------------------
+     nIndRec |     21,269    11.57986     200.421          0      19914
+     nComRec |     21,269    843.8967    7908.755          0     570116
+        aTot |     21,269    814328.7    1.16e+07  -72576.08   7.56e+08
+       aIndv |     21,269    363458.2     4948452  -24940.85   2.95e+08
+       aCorp |     21,269    141656.5     3011811   -1464.06   3.03e+08
+-------------+---------------------------------------------------------
+aIndvBigTech |     21,269     3816.03    71307.52   -6361.72    6881128
+   aIndvTech |     21,269    48129.05     1757555  -100062.7   2.46e+08
+   aCorpTech |     21,269     1700.29    32889.13      -2500    2465865
+     aDemRec |     21,269      228371     3169192  -669127.7   1.43e+08
+     aRepRec |     21,269      145386     2420804  -110897.7   2.92e+08
+-------------+---------------------------------------------------------
+     aIndRec |     21,269    29530.88     1229963      -1400   1.32e+08
+     aComRec |     21,269    546885.4     8757939     -19394   6.27e+08
+  meanCFCont |     21,269    -.112016    .7410495  -3.548571       4.17
+  meanCFCand |     21,269   -.0200237    .6127338      -1.96       3.92
+    sdCFCand |     21,269   -.0200237    .6127338      -1.96       3.92
+-------------+---------------------------------------------------------
+  meanCFDiff |     21,269   -.0251369    .1715547       -2.7       3.05
+          id |     21,269    602.8063    381.2216          1       1475
+
+Following variable is string, not included:  
+NAMELSAD  
+sum1.doc
+dir : seeout
+
+. format yr %ty
+
+. xtset id yr
+       panel variable:  id (unbalanced)
+        time variable:  yr, 1980 to 2018, but with gaps
+                delta:  1 year
+
+. 
+. gen mIndv = aIndv/nIndv
+(242 missing values generated)
+
+. gen mIndvTech = aIndvTech/nIndvTech
+(9,446 missing values generated)
+
+. gen mIndvBigTech = aIndvBigTech/nIndvBigTech
+(15,626 missing values generated)
+
+. gen mBigTech = aCorpTech/nCorpBigTech
+(18,370 missing values generated)
+
+. gen mCorp = aCorp/nCorp
+(12,658 missing values generated)
+
+. 
+. //Ftests
+. mvtest means mIndv mIndvTech mIndvBigTech
+
+Test that all means are the same
+
+          Hotelling T2 =      3.09
+   Hotelling F(2,5456) =      1.54
+              Prob > F =    0.2138
+
+. mvtest means mCorp mBigTech
+
+Test that all means are the same
+
+          Hotelling T2 =    141.64
+   Hotelling F(1,2461) =    141.64
+              Prob > F =    0.0000
+
+. //test mIndv=mIndvTech=mIndvBigTech
+. //test mCorp=mBigTech
+. ttest mCorp=mBigTech
+
+Paired t test
+------------------------------------------------------------------------------
+Variable |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+---------+--------------------------------------------------------------------
+   mCorp |   2,462    1951.549    118.6139     5885.45    1718.956    2184.143
+mBigTech |   2,462    529.0076    39.84759    1977.179    450.8694    607.1459
+---------+--------------------------------------------------------------------
+    diff |   2,462    1422.542    119.5279    5930.802    1188.156    1656.927
+------------------------------------------------------------------------------
+     mean(diff) = mean(mCorp - mBigTech)                          t =  11.9013
+ Ho: mean(diff) = 0                              degrees of freedom =     2461
+
+ Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = 1.0000         Pr(|T| > |t|) = 0.0000          Pr(T > t) = 0.0000
+
+. 
+. //create time FE
+. tab yr, gen(year)
+
+         yr |      Freq.     Percent        Cum.
+------------+-----------------------------------
+       1980 |        622        2.92        2.92
+       1982 |        565        2.66        5.58
+       1984 |        603        2.84        8.42
+       1986 |        622        2.92       11.34
+       1988 |        695        3.27       14.61
+       1990 |        776        3.65       18.26
+       1992 |        914        4.30       22.55
+       1994 |        889        4.18       26.73
+       1996 |      1,000        4.70       31.44
+       1998 |      1,150        5.41       36.84
+       2000 |      1,178        5.54       42.38
+       2002 |      1,286        6.05       48.43
+       2004 |      1,326        6.23       54.66
+       2006 |      1,350        6.35       61.01
+       2008 |      1,371        6.45       67.45
+       2010 |      1,347        6.33       73.79
+       2012 |      1,404        6.60       80.39
+       2014 |      1,378        6.48       86.87
+       2016 |      1,435        6.75       93.62
+       2018 |      1,358        6.38      100.00
+------------+-----------------------------------
+      Total |     21,269      100.00
+
+. 
+. //nCorp nIndvTech nIndvBigTech nCorpBigTech nDemRec nRepRec nIndRec nComRec aTot aCorp aIndvBigTech aIndvTech aCorpTech aDemRec aRepRec aIndRec aComRec aGen meanCFCont meanCFCand sdCFCand meanCFDiff
+. //aIndv nIndv
+. 
+. //dataset1 regressions
+. xtreg aIndv aCorp aTot, fe vce(cluster id)
+
+Fixed-effects (within) regression               Number of obs     =     21,269
+Group variable: id                              Number of groups  =      1,475
+
+R-sq:                                           Obs per group:
+     within  = 0.6592                                         min =          1
+     between = 0.7425                                         avg =       14.4
+     overall = 0.6896                                         max =         20
+
+                                                F(2,1474)         =      13.46
+corr(u_i, Xb)  = 0.0556                         Prob > F          =     0.0000
+
+                                 (Std. Err. adjusted for 1,475 clusters in id)
+------------------------------------------------------------------------------
+             |               Robust
+       aIndv |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       aCorp |  -1.263606   .2444795    -5.17   0.000    -1.743171    -.784041
+        aTot |   .5797926   .1317805     4.40   0.000     .3212953    .8382899
+       _cons |   70314.54   78089.56     0.90   0.368    -82863.97      223493
+-------------+----------------------------------------------------------------
+     sigma_u |  1312219.4
+     sigma_e |  2369461.6
+         rho |  .23471332   (fraction of variance due to u_i)
+------------------------------------------------------------------------------
+
+. outreg2 using amountReg1.doc, replace
+amountReg1.doc
+dir : seeout
+
+. dis "Adjusted Rsquared = " _result(8)
+Adjusted Rsquared = .
+
+. xtreg aIndv aCorp aTot year*, fe vce(cluster id)
+note: year20 omitted because of collinearity
+
+Fixed-effects (within) regression               Number of obs     =     21,269
+Group variable: id                              Number of groups  =      1,475
+
+R-sq:                                           Obs per group:
+     within  = 0.6597                                         min =          1
+     between = 0.7420                                         avg =       14.4
+     overall = 0.6897                                         max =         20
+
+                                                F(21,1474)        =      37.40
+corr(u_i, Xb)  = 0.0585                         Prob > F          =     0.0000
+
+                                 (Std. Err. adjusted for 1,475 clusters in id)
+------------------------------------------------------------------------------
+             |               Robust
+       aIndv |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       aCorp |  -1.261902   .2456684    -5.14   0.000    -1.743799   -.7800048
+        aTot |   .5786707   .1324399     4.37   0.000     .3188799    .8384615
+       year1 |  -138722.6   65997.57    -2.10   0.036    -268181.8   -9263.463
+       year2 |  -148247.1   72045.04    -2.06   0.040    -289568.9   -6925.418
+       year3 |  -142458.5   66000.02    -2.16   0.031    -271922.4   -12994.51
+       year4 |  -138806.7   62885.85    -2.21   0.027    -262161.9   -15451.38
+       year5 |  -112933.2   53446.89    -2.11   0.035    -217773.3   -8093.167
+       year6 |  -107182.1   50578.91    -2.12   0.034    -206396.4   -7967.749
+       year7 |  -78243.23   35450.48    -2.21   0.027      -147782    -8704.47
+       year8 |  -94968.06   41210.03    -2.30   0.021    -175804.6    -14131.5
+       year9 |  -67070.19   30403.52    -2.21   0.028      -126709   -7431.412
+      year10 |  -36982.08   30139.51    -1.23   0.220    -96102.98    22138.83
+      year11 |  -107144.7    41420.6    -2.59   0.010    -188394.3   -25895.07
+      year12 |  -57287.58   43696.94    -1.31   0.190    -143002.4    28427.22
+      year13 |  -24779.45   54528.42    -0.45   0.650      -131741    82182.13
+      year14 |   110442.3   134964.1     0.82   0.413    -154299.9    375184.6
+      year15 |   -39372.8   76277.09    -0.52   0.606      -188996    110250.4
+      year16 |   49202.68   68108.03     0.72   0.470    -84396.32    182801.7
+      year17 |   86098.43   106668.8     0.81   0.420    -123140.4    295337.3
+      year18 |   -9483.19   65141.16    -0.15   0.884    -137262.4    118296.1
+      year19 |   170481.8    93081.8     1.83   0.067    -12105.15    353068.7
+      year20 |          0  (omitted)
+       _cons |   93948.98   71183.54     1.32   0.187    -45682.85    233580.8
+-------------+----------------------------------------------------------------
+     sigma_u |  1314145.8
+     sigma_e |  2368975.1
+         rho |  .23531461   (fraction of variance due to u_i)
+------------------------------------------------------------------------------
+
+. outreg2 using amountReg1.doc, append
+amountReg1.doc
+dir : seeout
+
+. dis "Adjusted Rsquared = " _result(8)
+Adjusted Rsquared = .
+
+. xtreg aIndv aCorp aTot count nCorp nIndvTech nIndvBigTech nCorpBigTech aIndvBigTech aIndvBigTech aIndvTech aCorpTech year*, fe vce(cluster id)outreg2 using amountReg1.doc, append
+invalid 'append' 
+r(198);
+
+end of do-file
+
+r(198);
+
+. log close
+      name:  <unnamed>
+       log:  /Users/mishat/Desktop/Data/JP/final/DIMETimeSeries.log
+  log type:  text
+ closed on:   3 May 2020, 14:18:46
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

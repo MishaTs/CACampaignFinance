@@ -1,0 +1,99 @@
+{\rtf1\fs24
+\trowd\trgaph75\trleft-75\intbl\trqc\clbrdrt\brdrs\cellx2160\clbrdrt\brdrs\cellx3600\clbrdrt\brdrs\cellx5328\clbrdrt\brdrs\cellx6768\clbrdrt\brdrs\cellx8496
+\ql \cell\qc (1)\cell\qc (2)\cell\qc (3)\cell\qc (4)\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx2160\cellx3600\cellx5328\cellx6768\cellx8496
+\trowd\trgaph75\trleft-75\trqc\clbrdrb\brdrs\cellx2160\clbrdrb\brdrs\cellx3600\clbrdrb\brdrs\cellx5328\clbrdrb\brdrs\cellx6768\clbrdrb\brdrs\cellx8496
+\ql VARIABLES\cell\qc aIndv\cell\qc aIndv\cell\qc aIndv\cell\qc aIndv\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx2160\cellx3600\cellx5328\cellx6768\cellx8496
+\ql \cell\qc \cell\qc \cell\qc \cell\qc \cell\row
+\ql aCorp\cell\qc -1.264***\cell\qc -1.262***\cell\qc -0.759***\cell\qc -0.684***\cell\row
+\ql \cell\qc (0.244)\cell\qc (0.246)\cell\qc (0.233)\cell\qc (0.252)\cell\row
+\ql aTot\cell\qc 0.580***\cell\qc 0.579***\cell\qc 0.402***\cell\qc 0.410***\cell\row
+\ql \cell\qc (0.132)\cell\qc (0.132)\cell\qc (0.107)\cell\qc (0.152)\cell\row
+\ql aDemRec\cell\qc \cell\qc \cell\qc \cell\qc 0.161\cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\qc (0.298)\cell\row
+\ql aRepRec\cell\qc \cell\qc \cell\qc \cell\qc -0.833\cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\qc (0.507)\cell\row
+\ql aIndRec\cell\qc \cell\qc \cell\qc \cell\qc 0.158\cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\qc (0.248)\cell\row
+\ql meanCFCand\cell\qc \cell\qc \cell\qc \cell\qc -27,591\cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\qc (30,607)\cell\row
+\ql meanCFCont\cell\qc \cell\qc \cell\qc \cell\qc 1,418\cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\qc (32,892)\cell\row
+\ql aIndvTech\cell\qc \cell\qc \cell\qc 0.755***\cell\qc 1.697***\cell\row
+\ql \cell\qc \cell\qc \cell\qc (0.157)\cell\qc (0.553)\cell\row
+\ql aIndvBigTech\cell\qc \cell\qc \cell\qc 7.136**\cell\qc 5.370**\cell\row
+\ql \cell\qc \cell\qc \cell\qc (3.409)\cell\qc (2.451)\cell\row
+\ql aCorpTech\cell\qc \cell\qc \cell\qc -13.68*\cell\qc -13.31*\cell\row
+\ql \cell\qc \cell\qc \cell\qc (7.998)\cell\qc (7.762)\cell\row
+\ql count\cell\qc \cell\qc \cell\qc 15.77\cell\qc 96.68\cell\row
+\ql \cell\qc \cell\qc \cell\qc (39.66)\cell\qc (125.1)\cell\row
+\ql nCorp\cell\qc \cell\qc \cell\qc -304.3\cell\qc -2,839\cell\row
+\ql \cell\qc \cell\qc \cell\qc (2,152)\cell\qc (2,767)\cell\row
+\ql nIndvTech\cell\qc \cell\qc \cell\qc 318.2\cell\qc 141.5\cell\row
+\ql \cell\qc \cell\qc \cell\qc (287.8)\cell\qc (151.8)\cell\row
+\ql nIndvBigTech\cell\qc \cell\qc \cell\qc 1,185\cell\qc 1,583\cell\row
+\ql \cell\qc \cell\qc \cell\qc (1,243)\cell\qc (1,056)\cell\row
+\ql nCorpBigTech\cell\qc \cell\qc \cell\qc -1,755\cell\qc -1,241\cell\row
+\ql \cell\qc \cell\qc \cell\qc (1,705)\cell\qc (1,628)\cell\row
+\ql nComRec\cell\qc \cell\qc \cell\qc \cell\qc -95.96\cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\qc (100.7)\cell\row
+\ql nDemRec\cell\qc \cell\qc \cell\qc \cell\qc -82.73\cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\qc (152.1)\cell\row
+\ql nRepRec\cell\qc \cell\qc \cell\qc \cell\qc 2,215**\cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\qc (1,078)\cell\row
+\ql nIndRec\cell\qc \cell\qc \cell\qc \cell\qc -541.3\cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\qc (362.8)\cell\row
+\ql year1\cell\qc \cell\qc -138,723**\cell\qc 126,890\cell\qc 208,499***\cell\row
+\ql \cell\qc \cell\qc (65,998)\cell\qc (126,460)\cell\qc (78,575)\cell\row
+\ql year2\cell\qc \cell\qc -148,247**\cell\qc 122,687\cell\qc 231,531***\cell\row
+\ql \cell\qc \cell\qc (72,045)\cell\qc (130,464)\cell\qc (87,622)\cell\row
+\ql year3\cell\qc \cell\qc -142,458**\cell\qc 126,536\cell\qc 240,449***\cell\row
+\ql \cell\qc \cell\qc (66,000)\cell\qc (127,726)\cell\qc (89,840)\cell\row
+\ql year4\cell\qc \cell\qc -138,807**\cell\qc 134,636\cell\qc 230,487***\cell\row
+\ql \cell\qc \cell\qc (62,886)\cell\qc (127,049)\cell\qc (82,775)\cell\row
+\ql year5\cell\qc \cell\qc -112,933**\cell\qc 156,417\cell\qc 225,050***\cell\row
+\ql \cell\qc \cell\qc (53,447)\cell\qc (123,639)\cell\qc (81,098)\cell\row
+\ql year6\cell\qc \cell\qc -107,182**\cell\qc 141,496\cell\qc 197,254***\cell\row
+\ql \cell\qc \cell\qc (50,579)\cell\qc (117,601)\cell\qc (70,376)\cell\row
+\ql year7\cell\qc \cell\qc -78,243**\cell\qc 168,989\cell\qc 171,047***\cell\row
+\ql \cell\qc \cell\qc (35,450)\cell\qc (114,894)\cell\qc (60,081)\cell\row
+\ql year8\cell\qc \cell\qc -94,968**\cell\qc 151,188\cell\qc 193,019***\cell\row
+\ql \cell\qc \cell\qc (41,210)\cell\qc (113,742)\cell\qc (68,964)\cell\row
+\ql year9\cell\qc \cell\qc -67,070**\cell\qc 176,118\cell\qc 180,935***\cell\row
+\ql \cell\qc \cell\qc (30,404)\cell\qc (113,833)\cell\qc (57,189)\cell\row
+\ql year10\cell\qc \cell\qc -36,982\cell\qc 223,388*\cell\qc 150,315**\cell\row
+\ql \cell\qc \cell\qc (30,140)\cell\qc (117,598)\cell\qc (64,707)\cell\row
+\ql year11\cell\qc \cell\qc -107,145***\cell\qc 170,119\cell\qc 138,196**\cell\row
+\ql \cell\qc \cell\qc (41,421)\cell\qc (137,014)\cell\qc (66,826)\cell\row
+\ql year12\cell\qc \cell\qc -57,288\cell\qc 191,762\cell\qc 144,239\cell\row
+\ql \cell\qc \cell\qc (43,697)\cell\qc (164,852)\cell\qc (106,955)\cell\row
+\ql year13\cell\qc \cell\qc -24,779\cell\qc 237,477*\cell\qc 172,332**\cell\row
+\ql \cell\qc \cell\qc (54,528)\cell\qc (142,605)\cell\qc (85,701)\cell\row
+\ql year14\cell\qc \cell\qc 110,442\cell\qc 295,954*\cell\qc 223,056*\cell\row
+\ql \cell\qc \cell\qc (134,964)\cell\qc (179,521)\cell\qc (114,680)\cell\row
+\ql year15\cell\qc \cell\qc -39,373\cell\qc 148,382\cell\qc -123,008\cell\row
+\ql \cell\qc \cell\qc (76,277)\cell\qc (143,493)\cell\qc (123,353)\cell\row
+\ql year16\cell\qc \cell\qc 49,203\cell\qc 109,090\cell\qc -11,988\cell\row
+\ql \cell\qc \cell\qc (68,108)\cell\qc (128,578)\cell\qc (101,327)\cell\row
+\ql year17\cell\qc \cell\qc 86,098\cell\qc 261,746*\cell\qc 10,396\cell\row
+\ql \cell\qc \cell\qc (106,669)\cell\qc (155,122)\cell\qc (83,124)\cell\row
+\ql year18\cell\qc \cell\qc -9,483\cell\qc 150,908\cell\qc 143,548*\cell\row
+\ql \cell\qc \cell\qc (65,141)\cell\qc (154,905)\cell\qc (79,240)\cell\row
+\ql year19\cell\qc \cell\qc 170,482*\cell\qc 116,126**\cell\qc -219,507*\cell\row
+\ql \cell\qc \cell\qc (93,082)\cell\qc (50,699)\cell\qc (118,343)\cell\row
+\ql o.year20\cell\qc \cell\qc -\cell\qc -\cell\qc -\cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\qc \cell\row
+\ql o.aIndvBigTech\cell\qc \cell\qc \cell\qc -\cell\qc \cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\qc \cell\row
+\ql Constant\cell\qc 70,315\cell\qc 93,949\cell\qc -130,450\cell\qc -167,145***\cell\row
+\ql \cell\qc (78,090)\cell\qc (71,184)\cell\qc (103,394)\cell\qc (61,355)\cell\row
+\ql \cell\qc \cell\qc \cell\qc \cell\qc \cell\row
+\ql Observations\cell\qc 21,269\cell\qc 21,269\cell\qc 21,269\cell\qc 21,269\cell\row
+\ql R-squared\cell\qc 0.659\cell\qc 0.660\cell\qc 0.782\cell\qc 0.814\cell\row
+\trowd\trgaph75\trleft-75\trqc\trbrdrb\brdrs\clbrdrb\brdrs\cellx2160\clbrdrb\brdrs\cellx3600\clbrdrb\brdrs\cellx5328\clbrdrb\brdrs\cellx6768\clbrdrb\brdrs\cellx8496
+\ql Number of id\cell\qc 1,475\cell\qc 1,475\cell\qc 1,475\cell\qc 1,475\cell\row
+\pard\qc
+Robust standard errors in parentheses\par
+*** p<0.01, ** p<0.05, * p<0.1\par
+}

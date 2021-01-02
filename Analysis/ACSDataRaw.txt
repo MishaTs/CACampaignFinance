@@ -1,0 +1,562 @@
+            A00002_001:   Population Density (per sq. mile)
+            A00003_001:   Area Total
+            A00003_002:      Area (Land)
+            A00003_003:      Area (Water)
+            A02002_002:      Male:
+            A02002_003:         Under 5 Years
+            A02002_004:         5 to 9 Years
+            A02002_005:         10 to 14 Years
+            A02002_006:         15 to 17 Years
+            A02002_007:         18 to 24 Years
+            A02002_008:         25 to 34 Years
+            A02002_009:         35 to 44 Years
+            A02002_010:         45 to 54 Years
+            A02002_011:         55 to 64 Years
+            A02002_012:         65 to 74 Years
+            A02002_013:         75 to 84 Years
+            A02002_014:         85 Years and Over
+            A02002_015:      Female:
+            A02002_016:         Under 5 Years
+            A02002_017:         5 to 9 Years
+            A02002_018:         10 to 14 Years
+            A02002_019:         15 to 17 Years
+            A02002_020:         18 to 24 Years
+            A02002_021:         25 to 34 Years
+            A02002_022:         35 to 44 Years
+            A02002_023:         45 to 54 Years
+            A02002_024:         55 to 64 Years
+            A02002_025:         65 to 74 Years
+            A02002_026:         75 to 84 Years
+            A02002_027:         85 Years and Over
+             C01001B_002:      More than 5 Years
+             C01001B_003:      More than 10 Years
+             C01001B_004:      More than 15 Years
+             C01001B_005:      More than 18 Years
+             C01001B_006:      More than 20 Years
+             C01001B_007:      More than 21 Years
+             C01001B_008:      More than 22 Years
+             C01001B_009:      More than 25 Years
+             C01001B_010:      More than 30 Years
+             C01001B_011:      More than 35 Years
+             C01001B_012:      More than 40 Years
+             C01001B_013:      More than 45 Years
+             C01001B_014:      More than 50 Years
+             C01001B_015:      More than 55 Years
+             C01001B_016:      More than 60 Years
+             C01001B_017:      More than 62 Years
+             C01001B_018:      More than 65 Years
+             C01001B_019:      More than 67 Years
+             C01001B_020:      More than 70 Years
+             C01001B_021:      More than 75 Years
+             C01001B_022:      More than 80 Years
+             C01001B_023:      More than 85 Years
+             A01004_001:   Median Age:
+             A01004_002:      Male Population
+             A01004_003:      Female Population
+
+             A10008_001:   Households:
+             A10008_002:      Family Households:
+             A10008_003:         Married-couple Family
+             A10008_004:         Other Family:
+             A10008_005:            Male Householder, no wife present
+             A10008_006:            Female Householder, no husband present
+             A10008_007:      Nonfamily Households:
+             A10008_008:         Male Householder
+             A10008_009:         Female Householder
+
+      26. Housing Units by Household Size
+          Universe:  Universe:  Occupied housing units
+          Name:      A10024
+          Variables:
+             A10024_001:   Occupied Housing Units:
+             A10024_002:      1-Person Household
+             A10024_003:      2-Person Household
+             A10024_004:      3-Person Household
+             A10024_005:      4-Person Household
+             A10024_006:      5-Person Household
+             A10024_007:      6-Person Household
+             A10024_008:      7-or-More Person Household
+
+
+      27. Household Size (Renter-Occupied Housing Units)
+          Universe:  Universe:  Renter-Occupied Housing Units
+          Name:      A10002B
+          Variables:
+             A10002B_001:   Renter-Occupied Housing Units:
+             A10002B_002:      1-Person Household
+             A10002B_003:      2-Person Household
+             A10002B_004:      3-Person Household
+             A10002B_005:      4-Person Household
+             A10002B_006:      5-Person Household
+             A10002B_007:      6-Person Household
+             A10002B_008:      7-or-More Person Household
+
+
+      28. Housing Units by Families and Presence of Own Children
+          Universe:  Universe:  Occupied housing units
+          Name:      A10022
+          Variables:
+             A10022_001:   Occupied Housing Units:
+             A10022_002:      With Related Children of the Householder Under 18:
+             A10022_003:         With Own Children of the Householder Under 18:
+             A10022_004:            Under 6 Years Only
+             A10022_005:            Under 6 Years and 6 To 17 Years
+             A10022_006:            6 To 17 Years
+             A10022_007:         No Own Children of the Householder Under 18
+             A10022_008:      No Related Children of the Householder Under 18
+
+
+      29. Families and Presence of Own Children (Renter-Occupied Housing Units)
+          Universe:  Universe:  Renter-Occupied Housing Units
+          Name:      A10005B
+          Variables:
+             A10005B_001:   Renter-Occupied Housing Units:
+             A10005B_002:      With Related Children of the Householder Under 18
+             A10005B_003:         With Own Children of the Householder Under 18
+             A10005B_004:            Under 6 Years Only
+             A10005B_005:            Under 6 Years and 6 To 17 Years
+             A10005B_006:            6 To 17 Years
+             A10005B_007:         No Own Children of the Householder Under 18
+             A10005B_008:      No Related Children of the Householder Under 18
+
+
+      30. Households By Presence of People Under 18 Years By Household Type
+          Universe:  Households
+          Name:      A10009
+          Variables:
+             A10009_001:   Households:
+             A10009_002:      Households with one or More people under 18 Years:
+             A10009_003:         Family Households:
+             A10009_004:            Married-couple Family
+             A10009_005:            Other Family (Single Parent):
+             A10009_006:               Male Householder, no wife present
+             A10009_007:               Female Householder, no husband present
+             A10009_008:         Nonfamily Households:
+             A10009_009:            Male Householder
+             A10009_010:            Female Householder
+             A10009_011:      Households with no people under 18 Years:
+             A10009_012:         Family Households:
+             A10009_013:            Married-couple Family
+             A10009_014:            Other Family:
+             A10009_015:               Male Householder, no wife present
+             A10009_016:               Female Householder, no husband present
+             A10009_017:         Nonfamily Households:
+             A10009_018:            Male Householder
+             A10009_019:            Female Householder
+
+
+      31. Households By Race of Householder
+          Universe:  Households:
+          Variables:
+             A10010_002:      With a Householder who Is White Alone
+
+      32. Race (Renter-Occupied Housing Units)
+          Universe:  Universe:  Renter-Occupied Housing Units
+             A03001B_002:      White Alone Householder
+             A03001B_010:      Hispanic or Latino Householder
+
+
+      33. Housing Units by Hispanic Status of Householder
+          Universe:  Universe:  Occupied housing units
+             A10023_002:      Hispanic or Latino Householder
+             A10023_003:      Not Hispanic or Latino Householder
+
+
+      34. Housing Units by Age of Householder
+          Universe:  Universe:  Occupied housing units
+             A10020_002:      Householder 15 To 24 Years
+             A10020_003:      Householder 25 To 34 Years
+             A10020_004:      Householder 35 To 44 Years
+             A10020_005:      Householder 45 To 54 Years
+             A10020_006:      Householder 55 To 59 Years
+             A10020_007:      Householder 60 To 64 Years
+             A10020_008:      Householder 65 To 74 Years
+             A10020_009:      Householder 75 To 84 Years
+             A10020_010:      Householder 85 Years and Over
+
+
+      35. Age of Householder (Renter-Occupied Housing Units)
+          Universe:  Universe:  Renter-Occupied Housing Units
+             A01003B_002:      Householder 15 To 24 Years
+             A01003B_003:      Householder 25 To 34 Years
+             A01003B_004:      Householder 35 To 44 Years
+             A01003B_005:      Householder 45 To 54 Years
+             A01003B_006:      Householder 55 To 59 Years
+             A01003B_007:      Householder 60 To 64 Years
+             A01003B_008:      Householder 65 To 74 Years
+             A01003B_009:      Householder 75 To 84 Years
+             A01003B_010:      Householder 85 Years and Over
+
+
+      37. Average Household Size
+          Universe:  Occupied housing units
+             A10003_001:   Average household size
+
+
+      38. Average Household Size of Renter-Occupied Housing Units
+          Universe:  Universe:  Renter-Occupied Housing Units
+             A10003B_001:   Average Household Size for Renter-Occupied Housing Units
+
+
+      39. Marital Status For the Population 15 Years and Over
+          Universe:  Population 15 Years and Over
+             A11001_002:      Never married
+             A11001_003:      Now married (Not Including Separated)
+             A11001_004:      Separated
+             A11001_005:      Widowed
+             A11001_006:      Divorced
+
+      99. Aggregate Household Income in the Past 12 Months (In <DollarYear> Inflation-Adjusted Dollars) By Race
+          Universe:  Households
+             A14019_001:   Aggregate Household Income (In 2006 Inflation Adjusted Dollars):
+
+      101. Median Household Income the Past 12 Months (In <DollarYear> Inflation-Adjusted Dollars) (Renter-Occupied Housing Units)
+           Universe:  Universe:  Renter-Occupied Housing Units
+              A14016_001:   Median Household Income in the Past 12 Months (In 2006 Inflation-Adjusted Dollars)
+
+
+      102. Aggregate Nonfamily Household Income in the Past 12 Months (In <DollarYear> Inflation-Adjusted Dollars)
+           Universe:  Nonfamily Households
+              A14021_001:   Aggregate Nonfamily Household Income (In 2006 Inflation Adjusted Dollars)
+
+      104. Aggregate Income in the Past 12 Months (In <DollarYear> Inflation-Adjusted Dollars) By Race For Population 15 Years and Over
+           Universe:  Population 15 Years and Over
+              A14023_001:   Aggregate Income (In 2006 Inflation Adjusted Dollars) For Population 15 Years and Over:
+              A14023_002:      White Alone
+              A14023007:      Some Pther Race Alone
+              A14023_009:      Hispanic or Latino
+
+
+      105. Households with Earnings
+           Universe:  Households
+              A10011_002:      With earnings
+              A10011_003:      No earnings
+              A10019_002:      With wage or salary income
+              A10019_003:      No wage or salary income
+              A10016_002:      With self-employment income
+              A10016_003:      No self-employment income
+              A10012_002:      With interest, dividends, or net rental income
+              A10012_003:      No interest, dividends, or net rental income
+              A10017_002:      With Social Security income
+              A10017_003:      No Social Security income
+              A10018_002:      With Supplemental Security Income (SSI)
+              A10018_003:      No Supplemental Security Income (SSI)
+              A10014_002:      With public assistance income
+              A10014_003:      No public assistance income
+              A10015_002:      With retirement income
+              A10015_003:      No retirement income
+              A10013_002:      With Other types of income
+              A10013_003:      No Other types of income
+
+
+      114. Per Capita Income in the Past 12 Months (In <DollarYear> Inflation-Adjusted Dollars)
+           Universe:  Total Population
+              A14024_001:   Per capita income (In 2006 Inflation Adjusted Dollars)
+
+      124. Household Income Quintile Upper Limits
+           Universe:  Households
+              A14026_001:   Lowest Quintile
+              A14026_002:   Second Quintile
+              A14026_003:   Third Quintile
+              A14026_004:   Fourth Quintile
+              A14026_005:   Lower Limit of Top 5 Percent
+
+
+      125. Mean Household Income of Quintiles
+           Universe:  Households
+              A14027_001:   Lowest Quintile
+              A14027_002:   Second Quintile
+              A14027_003:   Third Quintile
+              A14027_004:   Fourth Quintile
+              A14027_005:   Highest Quintile
+              A14027_006:   Top 5 Percent
+
+
+      126. Shares of Aggregate Household Income By Quintile
+           Universe:  Households
+              A14025_001:   Lowest Quintile
+              A14025_002:   Second Quintile
+              A14025_003:   Third Quintile
+              A14025_004:   Fourth Quintile
+              A14025_005:   Highest Quintile
+              A14025_006:   Top 5 Percent
+
+
+      127. Gini Index of Income Inequality
+           Universe:  Households
+              A14028_001:   Gini Index
+
+      129. Tenure
+           Universe:  Occupied Housing Units
+              A10060_001:   Occupied Housing Units:
+              A10060_002:      Owner Occupied
+              A10060_003:      Renter Occupied
+
+
+
+              A10044_001:   Housing units:
+              A10044_002:      Occupied
+              A10044_003:      Vacant
+              A10032_002:      1 Unit:
+              A10032_003:         1, detached
+              A10032_004:         1, attached
+              A10032_005:      2
+              A10032_006:      3 or 4
+              A10032_007:      5 to 9
+              A10032_008:      10 to 19
+              A10032_009:      20 to 49
+              A10032_010:      50 or More
+              A10032_011:      Mobile home
+              A10032_012:      Boat, RV, van, etc.
+              A10031002:      Moved in 2005 or Later
+              A10031003:      Moved in 2000 To 2004
+              A10031004:      Moved in 1990 To 1999
+              A10031005:      Moved in 1980 To 1989
+              A10031006:      Moved in 1970 To 1979
+              A10031007:      Moved in 1969 or Earlier
+
+
+      139. Year Householder Moved Into Unit (Renter-Occupied Housing Units)
+           Universe:  Universe:  Renter-Occupied Housing Units
+           Name:      A10056B
+           Variables:
+              A10056B001:   Renter-Occupied Housing Units:
+              A10056B002:      Moved in 2005 or Later
+              A10056B003:      Moved in 2000 To 2004
+              A10056B004:      Moved in 1990 To 1999
+              A10056B005:      Moved in 1980 To 1989
+              A10056B006:      Moved in 1970 To 1979
+              A10056B007:      Moved in 1969 or Earlier
+
+      144. Occupied Housing Units by Number of Bedrooms
+           Universe:  Universe:  Occupied housing units
+              A10050_002:      No Bedroom
+              A10050_003:      1 Bedroom
+              A10050_004:      2 Bedrooms
+              A10050_005:      3 Bedrooms
+              A10050_006:      4 Bedrooms
+              A10050_007:      5 or More Bedrooms
+
+
+      145. Number of Bedrooms (Renter-Occupied Housing Units)
+           Universe:  Universe:  Renter-Occupied Housing Units
+              A10042B_002:      No Bedroom
+              A10042B_003:      1 Bedroom
+              A10042B_004:      2 Bedrooms
+              A10042B_005:      3 Bedrooms
+              A10042B_006:      4 Bedrooms
+              A10042B_007:      5 or More Bedrooms
+
+
+      146. Median Year Structure Built
+           Universe:  Housing units
+              A10057_001:   Median year structure built
+
+      152. Median House Value For All Owner-Occupied Housing Units
+           Universe:  Owner-occupied housing units
+              A10036_001:   Median value
+
+      158. Median Gross Rent As A Percentage of Household Income in the Past 12 Months
+           Universe:  Renter-occupied housing units paying cash rent
+              A18003_001:   Median Gross Rent as a Percentage of Household Income in 2006
+
+      160. Aggregate Gross Rent
+           Universe:  Renter-occupied housing units
+              A18004_001:   Aggregate gross rent for Specified Renter-Occupied Housing Units
+
+
+      162. Median Gross Rent by Year Structure Built
+           Universe:  Universe: Renter-occupied housing units paying cash rent
+              A18008001:   Median Gross Rent:
+              A18008005:      Built 1980 To 1989
+              A18008006:      Built 1970 To 1979
+              A18007_002:      Moved in 2005 or Later
+              A18007_003:      Moved in 2000 To 2004
+              A18007004:      Moved in 1990 To 1999
+
+
+      164. Mortgage Status
+           Universe:  Owner-occupied housing units
+           Name:      A10041
+           Variables:
+              A10041001:   Owner-occupied housing units:
+              A10041002:      Housing units with a mortgage, home equity loan, or similar debts:
+              A10041003:         With either a second mortgage or home equity loan, but not both:
+              A10041004:            Second mortgage only
+              A10041005:            Home equity loan only
+              A10041006:         Both second mortgage and home equity loan
+              A10041007:         No second mortgage and no home equity loan
+              A10041008:      Housing units without a mortgage
+              A10037_001:   Median selected monthly owner costs as a percentage of household income:
+              A10037_002:      Housing units with a mortgage
+              A10037_003:      Housing units without a mortgage
+
+
+      169. Housing Units by Monthly Housing Costs
+           Universe:  Universe:  Occupied housing units
+              A10027_002:      Less Than $100
+              A10027_003:      $100 To $199
+              A10027_004:      $200 To $299
+              A10027_005:      $300 To $399
+              A10027_006:      $400 To $499
+              A10027_007:      $500 To $599
+              A10027_008:      $600 To $699
+              A10027_009:      $700 To $799
+              A10027_010:      $800 To $899
+              A10027_011:      $900 To $999
+              A10027_012:      $1,000 To $1,499
+              A10027_013:      $1,500 To $1,999
+              A10027_014:      $2,000 or More
+              A10027_015:      No Cash Rent
+
+      173. Poverty Status in the Past 12 Months For Children Under 18
+           Universe:  Population Under 18 Years of Age for whom poverty status Is determined
+              A13003A_001:   Population Under 18 Years of Age for whom poverty status Is determined:
+              A13003A_002:      Living in Poverty
+              A13003A_003:      At or Above Poverty Level
+
+
+      174. Poverty Status in the Past 12 Months For Population Age 18 to 64
+           Universe:  Population Age 18 to 64 for whom poverty status Is determined
+              A13003B_001:   Population Age 18 to 64 for whom poverty status Is determined:
+              A13003B_002:      Living in Poverty
+              A13003B_003:      At or Above Poverty Level
+
+
+      175. Poverty Status in the Past 12 Months For Population Age 65 and Over
+           Universe:  Population Age 65 and Over for whom poverty status Is determined
+              A13003C_001:   Population Age 65 and Over for whom poverty status Is determined:
+              A13003C_002:      Living in Poverty
+              A13003C_003:      At or Above Poverty Level
+
+      189. Travel Time to Work For Workers 16 Years and Over
+           Universe:  Workers 16 Years and Over
+              A09001_002:      Did not work at home:
+              A09001_003:         Less than 10 minutes
+              A09001_004:         10 to 19 minutes
+              A09001_005:         20 to 29 minutes
+              A09001_006:         30 to 39 minutes
+              A09001_007:         40 to 59 minutes
+              A09001_008:         60 to 89 minutes
+              A09001_009:         90 or More minutes
+
+      191. Travel Time to Work For Workers 16 Years and Over (in 15 min intervals) 
+           Universe:  Workers 16 Years and Over Who Did Not Work at Home
+           Name:      A09002
+           Variables:
+              A09002_002:      Less than 5 minutes
+              A09002_003:      5 to 14 minutes
+              A09002_004:      15 to 29 minutes
+              A09002_005:      30 to 44 minutes
+              A09002_006:      45 to 59 minutes
+              A09002_007:      60 to 89 minutes
+              A09002_008:      90 or More minutes
+
+      195. Housing Units by Vehicles Available
+           Universe:  Universe:  Occupied housing units
+              A10030002:      No Vehicle Available
+              A10030_003:      1 Vehicle Available
+              A10030_004:      2 Vehicles Available
+              A10030_005:      3 Vehicles Available
+              A10030_006:      4 Vehicles Available
+              A10030_007:      5 or More Vehicles Available
+
+
+      196. Vehicles Available (Renter-Occupied Housing Units)
+           Universe:  Universe:  Renter-Occupied Housing Units
+              A10054B_002:      No Vehicle Available
+              A10054B_003:      1 Vehicle Available
+              A10054B_004:      2 Vehicles Available
+              A10054B_005:      3 Vehicles Available
+              A10054B_006:      4 Vehicles Available
+              A10054B_007:      5 or More Vehicles Available
+
+      199. Veteran Status For the Civilian Population
+           Universe:  Civilian Population 18 Years and Over
+              A16002_001:   Civilian Population 18 Years and Over:
+              A16002_002:      Veteran:
+              A16002_003:         18 to 64 Years
+              A16002_004:         65 Years and Over
+              A16002_005:      Nonveteran:
+              A16002_006:         18 to 64 Years
+              A16002_007:         65 Years and Over
+
+      201. Nativity By Citizenship Status
+           Universe:  Total Population
+              A06001_002:      Native Born
+              A06001_003:      Foreign Born:
+              A06001_004:         Naturalized Citizen
+              A06001_005:         Not a Citizen
+
+      203. Ancestry
+           Universe:  Total population
+              A05001_002:      Ancestry specified:
+              A05001_003:         Single ancestry
+              A05001_004:         Multiple ancestry
+
+      208. Occupied Housing Units by Complete Facilities
+           Universe:  Universe:  Occupied housing units
+           Name:      A10048
+           Variables:
+              A10048_001:   Occupied Housing Units:
+              A10048_002:      Complete Plumbing Facilities
+              A10048_003:      Complete Kitchen Facilities
+
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Variables 
+      FIPS:           FIPS
+      GEOID:          Geographic Identifier
+      NAME:           Name of Area
+      QName:          Qualifying Name
+      STUSAB:         State/U.S.-Abbreviation (USPS)
+      SUMLEV:         Summary Level
+      GEOCOMP:        Geographic Component
+      FILEID:         File Identification
+      LOGRECNO:       Logical Record Number
+      US:             US
+      REGION:         Region
+      DIVISION:       Division
+      STATECE:        State (Census Code)
+      STATE:          State (FIPS)
+      COUNTY:         County
+      COUSUB:         County Subdivision (FIPS)
+      PLACE:          Place (FIPS Code)
+      PLACESE:        Place (State FIPS + Place FIPS)
+      TRACT:          Census Tract
+      BLKGRP:         Block Group
+      CONCIT:         Consolidated City
+      AIANHH:         American Indian Area/Alaska Native Area/Hawaiian Home Land (Census)
+      AIANHHFP:       American Indian Area/Alaska Native Area/Hawaiian Home Land (FIPS)
+      AIHHTLI:        American Indian Trust Land/Hawaiian Home Land Indicator
+      AITSCE:         American Indian Tribal Subdivision (Census)
+      AITS:           American Indian Tribal Subdivision (FIPS)
+      ANRC:           Alaska Native Regional Corporation (FIPS)
+      CBSA:           Metropolitan and Micropolitan Statistical Area
+      CSA:            Combined Statistical Area
+      METDIV:         Metropolitan Division
+      MACC:           Metropolitan Area Central City
+      MEMI:           Metropolitan/Micropolitan Indicator Flag
+      NECTA:          New England City and Town Combined Statistical Area
+      CNECTA:         New England City and Town Area
+      NECTADIV:       New England City and Town Area Division
+      UA:             Urban Area
+      UACP:           Urban Area Central Place
+      CDCURR:         Current Congressional District ***
+      SLDU:           State Legislative District Upper
+      SLDL:           State Legislative District Lower
+      VTD:            Voting District
+      ZCTA3:          ZIP Code Tabulation Area (3-digit)
+      ZCTA5:          ZIP Code Tabulation Area (5-digit)
+      SUBMCD:         Subbarrio (FIPS)
+      SDELM:          School District (Elementary)
+      SDSEC:          School District (Secondary)
+      SDUNI:          School District (Unified)
+      UR:             Urban/Rural
+      PCI:            Principal City Indicator
+      TAZ:            Traffic Analysis Zone
+      UGA:            Urban Growth Area
+      PUMA5:          Public Use Microdata Area - 5% File
+      PUMA1:          Public Use Microdata Area - 1% File

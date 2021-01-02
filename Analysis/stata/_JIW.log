@@ -1,0 +1,171 @@
+-------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/mishat/Desktop/Data/JP/stata/_JIW.log
+  log type:  text
+ opened on:   7 May 2020, 15:14:52
+
+. 
+. cd "/Users/mishat/Desktop/Data/Colin JP/"
+/Users/mishat/Desktop/Data/Colin JP
+
+. use "OECD_AND_KLEMS_POST_MERGE_MEASURES.dta"
+
+. 
+. //Dropping outward flows of FDI
+. drop if out == 1
+(788 observations deleted)
+
+. drop out
+
+. 
+. //Reshaping for running regressions
+. {
+. reshape long value, i(country time measure flagcodes) j(industry, string)
+(note: j = AGRFORTFISH CONSTR ELECGASWATERSUPP FINANCEINS MFG MINEQUARR SERV TOTAL)
+
+Data                               wide   ->   long
+-----------------------------------------------------------------------------
+Number of obs.                    10244   ->   81952
+Number of variables                  12   ->       6
+j variable (8 values)                     ->   industry
+xij variables:
+valueAGRFORTFISH valueCONSTR ... valueTOTAL->  value
+-----------------------------------------------------------------------------
+. reshape wide value, i(country time flagcodes industry) j (measure, string)
+(note: j = CAP CAPIT_QI CAPNIT_QI CAP_QI COMP EMP EMPE FDI_PC_GDP GO GO_P GO_QI H_EMP H_EMPE II II_P II_QI LAB LAB_
+> QI LP1ConKIT LP1ConKNIT LP1ConLC LP1ConTFP LP1_Q LP2ConKIT LP2ConKNIT LP2ConLC LP2ConTFP LP2_Q LP_I MLN_USD PC_FD
+> I PC_GDP TFPlp1_I TFPlp2_I TFPva_I VA VAConH VAConKIT VAConKNIT VAConLC VAConTFP VA_P VA_Q VA_QI)
+
+Data                               long   ->   wide
+-----------------------------------------------------------------------------
+Number of obs.                    81952   ->    3944
+Number of variables                   6   ->      48
+j variable (44 values)          measure   ->   (dropped)
+xij variables:
+                                  value   ->   valueCAP valueCAPIT_QI ... valueVA_QI
+-----------------------------------------------------------------------------
+. 
+. order flagcodes, b(valueCAP)
+. order industry, b(time)
+. order valueMLN_USD, b(valueCAP)
+. order valuePC_FDI, b(valueCAP)
+. order valuePC_GDP, b(valueCAP)
+. order valueFDI_PC_GDP, b(valueCAP)
+. rename valueMLN_USD valueFDI_MLN_USD
+. rename valuePC_FDI valueFDI_PC_TOT_FDI
+. rename valuePC_GDP valueFDI_TOT_PC_GDP
+. rename valueFDI_PC_GDP valueFDI_INDUSTRY_PC_GDP
+. }
+
+. 
+. sort country industry time 
+
+. 
+. //Creating Industry Codes
+. {
+. gen industry_ = 1 if industry == "AGRFORTFISH"
+(3,451 missing values generated)
+. replace industry_ = 2 if industry == "CONSTR"
+(493 real changes made)
+. replace industry_ = 3 if industry == "ELECGASWATERSUPP"
+(493 real changes made)
+. replace industry_ = 4 if industry == "FINANCEINS"
+(493 real changes made)
+. replace industry_ = 5 if industry == "MFG"
+(493 real changes made)
+. replace industry_ = 6 if industry == "MINEQUARR"
+(493 real changes made)
+. replace industry_ = 7 if industry == "SERV"
+(493 real changes made)
+. replace industry_ = 8 if industry == "TOTAL"
+(493 real changes made)
+. 
+. order industry_, b(industry)
+. drop industry
+. rename industry_ industry
+. }
+
+. 
+. //Labels
+. {
+. label define country 1 "Austria"
+. label define country 2 "Belgium", add
+. label define country 3 "Switzerland", add
+. label define country 4 "Czech Republic", add
+. label define country 5 "Germany", add
+. label define country 6 "Denmark", add
+. label define country 7 "Spain", add
+. label define country 8 "Estonia", add
+. label define country 9 "Finland", add
+. label define country 10 "France", add
+. label define country 11 "Great Britain", add
+. label define country 12 "Greece", add
+. label define country 13 "Hungary", add
+. label define country 14 "Ireland", add
+. label define country 15 "Iceland", add
+. label define country 16 "Italy", add
+. label define country 17 "Lithuania", add
+. label define country 18 "Luxembourg", add
+. label define country 19 "Latvia", add
+. label define country 20 "Netherlands", add
+. label define country 21 "Norway", add
+. label define country 22 "Poland", add
+. label define country 23 "Portugal", add
+. label define country 24 "Slovakia", add
+. label define country 25 "Slovenia", add
+. label define country 26 "Sweden", add
+. label define country 27 "United States", add
+. label define country 28 "Canada", add
+. label define country 29 "European Union", add
+. label define country 30 "G20", add
+. label define country 31 "OECD", add
+. label define country 32 "World", add
+. 
+. label define industry 1 "AGRFORTFISH"
+. label define industry 2 "CONSTR", add
+. label define industry 3 "ELECGASWATERSUPP", add
+. label define industry 4 "FIANNCEINS", add
+. label define industry 5 "MFG", add
+. label define industry 6 "MINEQUARR", add
+. label define industry 7 "SERV", add
+. label define industry 8 "TOTAL", add
+. }
+
+. 
+. //Dropping Countries that are not included in KLEMS dataset
+. 
+. 
+. 
+. //Formatting time for xtset
+. format time %ty
+
+. 
+. 
+. //Summary statistics of amount of incoming FDI by year reported in two ways,
+. //total value in millions of USD and in percentage of GDP
+. {
+. drop if time < 2012
+(1,712 observations deleted)
+. drop if time > 2015
+(888 observations deleted)
+. }
+
+. 
+. hist valueFDI_INDUSTRY_PC_GDP, bin(50)
+(bin=50, start=0, width=7.0113624)
+
+. hist valueGO, bin(50)
+(bin=50, start=69.900002, width=1359870)
+
+. hist valueGO_QI, bin(50)
+(bin=50, start=60.299999, width=567300.39)
+
+. 
+. //Regression 1
+. 
+. log close
+      name:  <unnamed>
+       log:  /Users/mishat/Desktop/Data/JP/stata/_JIW.log
+  log type:  text
+ closed on:   7 May 2020, 15:15:00
+-------------------------------------------------------------------------------------------------------------------
